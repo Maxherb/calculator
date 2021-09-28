@@ -1,0 +1,31 @@
+def rechnung():
+    a = '+'
+    b = '-'
+    c = '*'
+    d = '/'
+    eingabe1 = int(input('Gebe eine Zahl ein: '))
+    eingabeop = input('WÃ¤hlen sie ihren Operator +-*/ ')
+    eingabe2 = int(input('Gebe eine zweite Zahl ein: '))
+
+    if eingabeop == a:
+        ergebnis = eingabe1 + eingabe2
+        print(ergebnis)
+        return True
+
+    elif eingabeop == b:
+        ergebnis = eingabe1 - eingabe2
+        print(ergebnis)
+        return True
+
+    elif eingabeop == c:
+        ergebnis = eingabe1 * eingabe2
+        print(ergebnis)
+        return True
+
+    elif eingabeop == d:
+        ergebnis = eingabe1 / eingabe2
+        print(ergebnis)
+        return True
+
+while True:
+    rechnung()
